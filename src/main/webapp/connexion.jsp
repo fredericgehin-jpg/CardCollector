@@ -4,7 +4,7 @@
 <html>
     <head>
         <title>Cards Collector - Connexion</title>
-        <LINK rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
         <div class="login_container">
