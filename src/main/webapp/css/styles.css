@@ -1,0 +1,111 @@
+body, html{
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    background-color: #24251F;
+}
+
+.login_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(34,34,34,0.8);
+    padding: 2.5rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    animation: fadeIn 1s ease-out;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.login_container h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #7125ee;
+}
+
+.login_container p{
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.error-message {
+    background-color: rgba(255, 0, 0, 0.2);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: #ff6b6b;
+}
+
+.login_container input{
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.login_container input:focus{
+    outline: none;
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 0 0 10px rgba(74, 0, 224, 0.5);
+}
+
+.login_container input::placeholder{
+    color: rgba(255,255,255,0.6);
+}
+
+.login_container button{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(to right, #4a00c0, #8e44ad);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login_container button:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.register_link, .home_link{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.register_link a, .home_link a{
+    color: #8e2de2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.register_link a:hover, .home_link a:hover{
+    color: #4a00c0;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    to{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
